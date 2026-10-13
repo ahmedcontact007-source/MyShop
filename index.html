@@ -4,7 +4,123 @@
         <meta charset="UTF-8">    
         <title>MyShop - Boutique</title> 
      </head> 
-    <body>    <!-- Votre contenu ici -->  
+    <body>    
+        <header>
+            <h1>MyShop</h1>
+            <nav> 
+                 <a href="#accueil">Accueil</a>
+                 <a href="#produits">Produits</a>
+                 <a href="#Tarifs">Tarifs</a>
+                 <a href="#Contact">Contact</a> 
+           
+            </nav>
+        </header>
+
+        <main>
+                <section id="accueil">  
+                    <h2>Bienvenue sur MyShop</h2>  
+                    <p>Découvrez notre <strong>boutique</strong> !</p>  
+                    <img src="media/boutique.jpg" alt="Présentation de MyShop" width="320"> 
+                </section>
+
+                <section id="produits">
+                    <h2> Nos produits </h2>
+                    <ul>  
+                        <li>Vêtements</li>
+                        <li>Chaussures</li> 
+                        <li>Accessoires</li>
+                     </ul>
+
+                     <div>  
+                        <h3>T-shirt</h3>  
+                        <img src="media/tshirt.jpg" alt="T-shirt bleu" width="180"> 
+                         <p>Prix : 200 DH</p>  <a href="#contact">Demander ce produit</a> 
+                    </div>
+
+                    <div>  
+                        <h3>Chaussures</h3>  
+                        <img src="media/chaussures.jpg" alt="Chaussures bleu" width="180"> 
+                         <p>Prix : 350 DH</p>  <a href="#contact">Demander ce produit</a> 
+                    </div>
+
+                    <div>  
+                        <h3>Sac</h3>  
+                        <img src="media/sac.jpg" alt="Sac bleu" width="180"> 
+                         <p>Prix : 150 DH</p>  <a href="#contact">Demander ce produit</a> 
+                    </div>
+
+                </section>
+
+                <section id="tarifs">  
+                    <h2>Tarifs</h2>  
+                    <table>  
+                        <caption>Catalogue et prix</caption>  
+                        <tr><th>Produit</th><th>Prix</th><th>Disponibilité</th></tr>  
+                        <tr><td>T-shirt</td><td>200 DH</td><td>En stock</td></tr> 
+                        <tr><td>chaussures</td><td>350 DH</td><td>En stock</td></tr> 
+                        <tr><td>Sac</td><td>150 DH</td><td>En stock</td></tr> 
+                     </table> 
+                </section>
+
+                <section id="decouverte">
+                        <h2>Découverte</h2>
+                        <audio controls>  
+                            <source src="media/presentation.mp3" type="audio/mpeg">  
+                            Votre navigateur ne prend pas en charge l’audio.                  
+                        </audio>
+                        <br>
+                        <video controls width="360">  
+                            <source src="media/demo.mp4" type="video/mp4"> 
+                             Votre navigateur ne prend pas en charge la vidéo.                         
+                         </video>
+                </section>
+
+                <section id="contact">
+                    <form action ="#" method ="get">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                        <br>
+                        <br>
+                        <label for="email">E-mail :</label>
+                        <input type="email" id ="email" name="email" required>
+                        <br>
+                        <br>
+                        <label for="téléphone">Téléphone : </label>  
+                        <input type ="téléphone" id="téléphone" name="téléphone" required>                    
+                    </form>
+                </section>
+                         <br>
+                <select>
+                    <h2>Produit souhaité</h2>
+                    <option value="tshirt">T-shirt</option>
+                     <br>
+                    <option value="chaussures">T-Chaussures</option>
+                     <br>
+                    <option value="sac">Sac</option>
+                </select>
+                         <br>
+                <textarea name="message" cols="35" rows="4">
+                    Welecome to GoMycode
+                </textarea>
+                <br>
+                <input type="radio" id="Livraison" name="Livraison" value="Livraison">
+                 <label for="Livraison">Livraison</label>
+                 <input type="radio" id="retrait" name="retrait" value="retrait">
+                 <label for="retrait">Retrait</label>
+                 <br>
+                <br>
+                <input type="checkbox" id="conditions" name="conditions" value="conditions">
+                 <label for="conditions">J'accepte d'être contacté</label>
+                 <br>
+                <br>
+                <button type="submit">Envoyer</button>
+                <br>
+                <br>
+                <button type="reset">Effacer</button>
+
+
+        </main>
+
 
     </body> 
  </html>
